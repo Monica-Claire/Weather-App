@@ -1,15 +1,37 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Weather App</title>
-<meta name="description" content="A simple weather app">
-<!-- add link to style sheet -->
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
 
 <body>
+    <hero class="container-fluid">
+        <div class="box">
+            <H1>Welcome to my Weather App</H1>
+        </div>
+    </hero>
 
+    <aside class="container-sm">
+        <div class="search">
+        <!--Add Search Bar-->
+        <input type="text" placeholder="Enter City">
+        <!--Add Submit Button-->
+        <button type="button" id="search">Search</button>
+        <br><h2>Search History</h2>
+        <!--add dynamically generated divs from JS-->
+        </div>
+    </aside>
+
+    <main class="container-lg">
+        <div class="box">
+            <h2>Weather Data</h2>
+        </div>
+    </main>
 
 <script src="./assets/javascript/script.js"></script>
 </body>
